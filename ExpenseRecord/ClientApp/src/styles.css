@@ -1,16 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
 }
 
-code {
-  color: #e01a76;
+* {
+  box-sizing: border-box;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+button {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 20px;
+  border: 1px solid;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.button-default {
+  border-color: black;
+  background-color: lightgray;
+}
+
+.button-blue {
+  border-color: deepskyblue;
+  background-color: lightskyblue;
+}
+
+.button-red {
+  border-color: darksalmon;
+  background-color: lightsalmon;
+}
+
+input {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  border: 1px solid;
+  border-radius: 0;
 }

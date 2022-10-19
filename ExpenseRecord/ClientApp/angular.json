@@ -72,8 +72,7 @@
               "browserTarget": "ExpenseRecord:build:production"
             },
             "development": {
-              "browserTarget": "ExpenseRecord:build:development",
-              "proxyConfig": "proxy.conf.js"
+              "browserTarget": "ExpenseRecord:build:development"
             }
           },
           "defaultConfiguration": "development"

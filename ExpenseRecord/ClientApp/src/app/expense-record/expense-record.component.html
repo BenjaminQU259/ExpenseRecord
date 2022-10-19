@@ -1,1 +1,19 @@
-<p>expense-record works!</p>
+<div class="title">
+  <span>{{ title }}</span>
+</div>
+
+<div class="list-container">
+  <div class="list">
+    <input type="text" id="create-input" />
+    <button class="button-blue" (click)="add()">OK</button>
+
+    <ng-container *ngFor="let item of recordedItems">
+      <div class="item">
+        <span
+          >{{ item.description }} {{ item.type }} {{ item.amount }}
+          {{ item.date }}</span
+        >
+      </div>
+    </ng-container>
+  </div>
+</div>
