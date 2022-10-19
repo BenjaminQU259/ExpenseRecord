@@ -4,6 +4,8 @@ namespace ExpenseRecord.Dto
 {
   public class ExpenseItemDto
   {
+    [Column("exp_id")]
+    public int Id { get; set; }
     [Column("exp_desc")]
     public string? Description { get; set; }
     [Column("exp_type")]
