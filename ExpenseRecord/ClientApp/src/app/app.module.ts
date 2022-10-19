@@ -2,26 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { CounterComponent } from './counter/counter.component';
-import {GreetingComponent} from "./greeting/greeting.component";
-import { ExpenseRecordComponent } from './expense-record/expense-record.component';
+import { GreetingComponent } from './greeting/greeting.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        CounterComponent,
-        GreetingComponent,
-        ExpenseRecordComponent
-    ],
+  declarations: [AppComponent, GreetingComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
